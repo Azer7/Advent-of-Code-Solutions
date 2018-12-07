@@ -4,18 +4,19 @@
         {
             "label": "Build Debug",
             "type": "shell",
-            "command": "g++ -g -o Debug/debug.exe",
+            "command": "g++",
             //"options": {
             //    "cwd": "C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\VC\\bin"
             //},
             "args": [
+                "-g",
+                "-o",
+                "Debug/debug.exe",
                 "-Wall",
-                "day1.cpp"
-                //"-o Debug/debug3.exe",
-                //"-Wall",
                 //"/Fe:${workspaceFolder}/Debug/debug.exe",
                 //"/Fd:${workspaceFolder}/Debug/", 
                 //"/Fo:${workspaceFolder}/Debug/",
+                "day1.cpp"
             ],
             "group": {
                 "kind": "build",
