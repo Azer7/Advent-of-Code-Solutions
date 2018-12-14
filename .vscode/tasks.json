@@ -1,3 +1,5 @@
+//-exec source .gdbinit
+
 {
     "version": "2.0.0",
     "tasks": [
@@ -16,7 +18,7 @@
                 //"/Fe:${workspaceFolder}/Debug/debug.exe",
                 //"/Fd:${workspaceFolder}/Debug/", 
                 //"/Fo:${workspaceFolder}/Debug/",
-                "day1.cpp"
+                "day13.cpp"
             ],
             "group": {
                 "kind": "build",
