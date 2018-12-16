@@ -1,0 +1,18 @@
+﻿  day13a.cpp
+c:\users\school\documents\github\advent-of-code-solutions\day13\day13a.cpp(86): warning C4018: '<': signed/unsigned mismatch
+c:\users\school\documents\github\advent-of-code-solutions\day13\day13a.cpp(88): warning C4018: '<': signed/unsigned mismatch
+  day13b.cpp
+c:\users\school\documents\github\advent-of-code-solutions\day13\day13b.cpp(86): warning C4018: '<': signed/unsigned mismatch
+c:\users\school\documents\github\advent-of-code-solutions\day13\day13b.cpp(88): warning C4018: '<': signed/unsigned mismatch
+  Generating Code...
+day13b.obj : error LNK2005: "int TURN_LEFT" (?TURN_LEFT@@3HA) already defined in day13a.obj
+day13b.obj : error LNK2005: "int TURN_RIGHT" (?TURN_RIGHT@@3HA) already defined in day13a.obj
+day13b.obj : error LNK2005: "int * addr" (?addr@@3PAHA) already defined in day13a.obj
+day13b.obj : error LNK2005: "public: __thiscall Car::Car(char)" (??0Car@@QAE@D@Z) already defined in day13a.obj
+day13b.obj : error LNK2005: "public: void __thiscall Car::turn(int *)" (?turn@Car@@QAEXPAH@Z) already defined in day13a.obj
+day13b.obj : error LNK2005: "struct std::pair<int,int> __cdecl getCrash(void)" (?getCrash@@YA?AU?$pair@HH@std@@XZ) already defined in day13a.obj
+day13b.obj : error LNK2005: _main already defined in day13a.obj
+day13b.obj : error LNK2005: "class std::vector<class std::vector<class Car *,class std::allocator<class Car *> >,class std::allocator<class std::vector<class Car *,class std::allocator<class Car *> > > > cars" (?cars@@3V?$vector@V?$vector@PAVCar@@V?$allocator@PAVCar@@@std@@@std@@V?$allocator@V?$vector@PAVCar@@V?$allocator@PAVCar@@@std@@@std@@@2@@std@@A) already defined in day13a.obj
+day13b.obj : error LNK2005: "class std::vector<class std::vector<char,class std::allocator<char> >,class std::allocator<class std::vector<char,class std::allocator<char> > > > map" (?map@@3V?$vector@V?$vector@DV?$allocator@D@std@@@std@@V?$allocator@V?$vector@DV?$allocator@D@std@@@std@@@2@@std@@A) already defined in day13a.obj
+MSVCRTD.lib(exe_winmain.obj) : error LNK2019: unresolved external symbol _WinMain@16 referenced in function "int __cdecl invoke_main(void)" (?invoke_main@@YAHXZ)
+C:\Users\School\Documents\GitHub\Advent-of-Code-Solutions\day13\Debug\day13.exe : fatal error LNK1120: 1 unresolved externals

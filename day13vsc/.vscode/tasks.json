@@ -1,0 +1,57 @@
+//-exec source .gdbinit
+
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build Debug",
+            "type": "shell",
+            "command": "g++",
+            //"options": {
+            //    "cwd": "C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\VC\\bin"
+            //},
+            "args": [
+                "-g",
+                "-o",
+                "Debug/debug.exe",
+                "-Wall",
+                //"/Fe:${workspaceFolder}/Debug/debug.exe",
+                //"/Fd:${workspaceFolder}/Debug/", 
+                //"/Fo:${workspaceFolder}/Debug/",
+                "day13b.cpp"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
+
+// tasks.json
+// {
+//     "version": "2.0.0",
+//     "echoCommand": true,
+//     "tasks": [
+//         {
+//             "label": "Build Debug",
+//             "command": "cmd",
+//             "type": "process",
+//             "args": [
+//                 "/C %vcvarsall% && cl /Od /Zi /EHsc /Fd:%outpath%/vc141.pdb /Fo:%outpath%/%TargetName%.obj ./day1.cpp /link /OUT:%outpath%/%TargetName%.%TargetExt% /PDB:%outpath%/%TargetName%.pdb",
+//             ],
+//             "group": {
+//                 "kind": "build",
+//                 "isDefault": true
+//             },
+//         }
+//     ],
+//     "options": {
+//         "env": {
+//             "outpath": "Debug", // must exist before running
+//             "TargetName": "debug",
+//             "TargetExt": "exe",
+//             "vcvarsall": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\Community\\VC\\Auxiliary\\Build\\vcvarsall.bat\" x64",
+//         }
+//     }
+// }
